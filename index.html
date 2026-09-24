@@ -69,24 +69,25 @@ td{font-weight:700}
 
 /* craft */
 .craft img{border-radius:6px}
-.craft .sign{margin-bottom:10px}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.craft .sign{margin-bottom:14px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
 .pair img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.craft img.sign{margin:28px 0 0}
+.craft img.sign{margin:0 0 14px}
 
 /* notes */
 ul.notes{padding-left:1.1em;margin:0;color:var(--muted);font-size:.98rem}
 ul.notes li{margin-bottom:.5em}
 
 /* order */
-.order{background:var(--walnut);color:var(--paper);border-top:0;margin-top:0}
-.order h2{color:var(--paper)}
-.order .muted{color:var(--pine)}
-.order .btn.primary{background:var(--pine);color:#3A2412;border-color:var(--pine)}
-.order .btn.ghost{color:var(--pine);border-color:var(--pine)}
-.order address{font-style:normal;margin-top:26px;line-height:1.9}
+.order{background:var(--pine);color:var(--ink);border-top:0}
+.order h2{color:var(--walnut);font-size:2rem}
+.order .lead-o{font-size:1.1rem;color:var(--ink);margin-bottom:22px}
+.order .btn{min-height:64px;font-size:1.15rem}
+.order .btn.ghost{background:var(--paper)}
+.order address{font-style:normal;margin-top:28px;padding:20px;background:var(--paper);border-radius:12px;font-size:1.05rem;line-height:1.8}
+.order address .name{font-family:"Gowun Batang",serif;font-size:1.35rem;font-weight:700;color:var(--walnut);display:block;margin-bottom:4px}
+.order address .tel{font-size:1.3rem;font-weight:700;color:var(--forest);text-decoration:none}
 footer{text-align:center;font-size:.85rem;color:var(--muted);padding:26px 0 36px}
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .order{background:#2A1F14} }
 @media (max-width:380px){ .hero h1{font-size:2.1rem} .btns{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ *{scroll-behavior:auto} }
 </style>
@@ -186,14 +187,15 @@ footer{text-align:center;font-size:.85rem;color:var(--muted);padding:26px 0 36px
 <section class="order">
   <div class="wrap">
     <h2>주문하기</h2>
-    <p class="muted">문자 주문을 누르면 주문 양식이 채워진 문자창이 열립니다. 수량과 받는 분, 주소만 적어 보내 주세요.</p>
+    <p class="lead-o">문자로 주문을 누르면 주문 양식이 채워진 문자창이 열립니다. 수량, 받는 분, 주소만 적어 보내 주세요.</p>
     <div class="btns">
       <a class="btn primary" href="sms:01038014213?&amp;body=%5B%EC%82%AC%EB%B3%B4%EB%AA%A9%EA%B3%B5%EC%98%88%5D%20%EC%9B%90%EB%AA%A9%20%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%B9%AD%20%EB%B0%9C%ED%8C%90%20%EC%A3%BC%EB%AC%B8%ED%95%A9%EB%8B%88%EB%8B%A4.%0A%EC%88%98%EB%9F%89%3A%20%0A%EB%B0%9B%EB%8A%94%20%EB%B6%84%3A%20%0A%EC%97%B0%EB%9D%BD%EC%B2%98%3A%20%0A%EB%B0%B0%EC%86%A1%20%EC%A3%BC%EC%86%8C%3A%20">문자로 주문</a>
       <a class="btn ghost" href="tel:01038014213">전화 문의</a>
     </div>
     <address>
-      <strong>사보목공예</strong> 원목가구 제작, 주문 제작<br>
-      010-3801-4213<br>
+      <span class="name">사보목공예</span>
+      원목가구 제작, 주문 제작<br>
+      <a class="tel" href="tel:01038014213">010-3801-4213</a><br>
       경남 합천군 합천읍 동서로 26번지
     </address>
   </div>
